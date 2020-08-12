@@ -1,0 +1,63 @@
+#key:
+#  child-key: value
+#  child-key2: value2
+#?
+#  - complexkey1
+#  - complexkey2
+#:
+#  - complexvalue1
+#  - complexvalue2
+#-
+# - A
+# - M
+# - B
+# - C
+#key: [value1, value2]
+#-
+#  - A
+#  - B
+#  - C
+
+#companies:
+#  -
+#    id: 1
+#    name: company1
+#    price: 200W
+#  -
+#    id: 2
+#    name: company2
+#    price: 500W
+
+#id: 2
+#name: company2
+#price: 500W
+
+#- TRUE  #true,True都可以
+#- FALSE  #false，False都可以
+
+#- 哈哈
+#- 'Hello world'  #可以使用双引号或者单引号包裹特殊字符
+#- newline
+#  newline2    #字符串可以拆成多行，每一行会被转化成一个空格
+#- 212
+
+#- &showell Steve
+#- Clark
+#- Brian
+#- Oren
+#- *showell
+
+defaults:
+  adapter:  postgres
+  host:     localhost
+
+development:
+  database: myapp_development
+  adapter:  postgres
+  host:     localhost
+  Host:     localhost
+
+test:
+  database: myapp_test
+  adapter:  postgres
+  host:     localhost
